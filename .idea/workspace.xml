@@ -2,136 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0200124-b43e-4ec4-bc72-6e377f8217bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PHPUtil.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/login.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/logout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/schema/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AuthSessionProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Credential/Facebook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Credential/Post.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kbec.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Recorder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Token.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UserInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookCanvasLoginHelper.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookJavaScriptLoginHelper.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookRedirectLoginHelper.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookRequest.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookRequestException.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookResponse.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/FacebookSession.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/GraphObject.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/post_links.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/retrieve_user_profile.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/sdk_getting_started.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/sdk_landing_page.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/docs/upload_photo.fbmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/Entities/AccessToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/Entities/SignedRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookAuthorizationException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookCanvasLoginHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookClientException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookJavaScriptLoginHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookOtherException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookPageTabHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookPermissionException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookRedirectLoginHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookRequestException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookResponse.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookSDKException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookServerException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookSession.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookSignedRequestFromInputHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/FacebookThrottleException.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphLocation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphObject.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphPage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphSessionInfo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphUser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/GraphUserPage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookCurl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookCurlHttpClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookGuzzleHttpClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookHttpable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookStream.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/FacebookStreamHttpClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/src/Facebook/HttpClients/certs/DigiCertHighAssuranceEVRootCA.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/Entities/AccessTokenTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/Entities/SignedRequestTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookCanvasLoginHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookJavaScriptLoginHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookPageTabHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookRedirectLoginHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookRequestExceptionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookRequestTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookSessionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookSignedRequestFromInputHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookTestCredentials.php.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/FacebookTestHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/GraphAlbumTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/GraphLocationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/GraphObjectTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/GraphSessionInfoTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/GraphUserTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/HttpClients/AbstractTestHttpClient.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/HttpClients/FacebookCurlHttpClientTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/HttpClients/FacebookGuzzleHttpClientTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/HttpClients/FacebookStreamHttpClientTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/facebook/php-sdk-v4/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/illuminate/container/Illuminate/Container" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/illuminate/database/Illuminate/Database" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/illuminate/events/Illuminate/Events" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/illuminate/support/Illuminate/Support" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/history.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/AddTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/ComparisonTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/ConstructTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CopyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CreateFromDateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CreateFromFormatTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CreateFromTimeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CreateFromTimestampTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/CreateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/DayOfWeekModifiersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/DiffTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/FluidSettersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/GettersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/InstanceTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/IsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/IssetTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/NowAndOtherStaticHelpersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/SettersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/StartEndOfTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/StringsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/SubTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/TestFixture.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/tests/TestingAidsTest.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wap.iws" />
@@ -176,7 +46,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09" vertical-offset="0" max-vertical-offset="500">
+            <state line="3" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
               <folding />
             </state>
           </provider>
@@ -353,13 +223,19 @@
       <created>1421572445485</created>
       <updated>1421572445485</updated>
     </task>
+    <task id="LOCAL-00001" summary="upate&#10;">
+      <created>1422379259195</created>
+      <updated>1422379259195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="22" width="1382" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3307888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -391,6 +267,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="upate&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="upate&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -500,7 +378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09" vertical-offset="0" max-vertical-offset="500">
+        <state line="3" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.090361446" vertical-offset="0" max-vertical-offset="498">
           <folding />
         </state>
       </provider>
