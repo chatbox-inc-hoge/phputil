@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0200124-b43e-4ec4-bc72-6e377f8217bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Arr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Str.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/kbec.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PHPUtil.php" afterPath="$PROJECT_DIR$/src/PHPUtil.php" />
     </list>
     <ignored path="wap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -418,7 +408,11 @@
       <created>1422379271014</created>
       <updated>1422379271014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Str and Arr&#10;">
+      <created>1422399599825</created>
+      <updated>1422399599825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -459,7 +453,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="upate&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="upate&#10;" />
+    <MESSAGE value="add Str and Arr&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Str and Arr&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
