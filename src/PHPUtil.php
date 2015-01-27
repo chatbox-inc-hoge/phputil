@@ -11,5 +11,8 @@ namespace Chatbox;
 
 class PHPUtil {
 
+    static function arr(){
+    }
+
 
 } 
