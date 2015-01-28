@@ -11,6 +11,11 @@ namespace Chatbox;
 
 class PHPUtil {
 
+	public static function value($var)
+	{
+		return ($var instanceof \Closure) ? $var() : $var;
+	}
+
     static function arr(){
     }
 

@@ -78,5 +78,9 @@ class Str {
         return Arr::get(static::$loremCache,$type,[]);
     }
 
+	static public function matchLeftHand($haystack,$needle){
+		return strpos($haystack,$needle) === 0;
+	}
+
 
 } 
