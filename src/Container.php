@@ -17,7 +17,7 @@ class Container implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSeria
 	/**
 	 * @param array $data
 	 */
-	function __construct(array $data)
+	function __construct(array $data = [])
 	{
 		$this->data = $data;
 	}

@@ -8,7 +8,7 @@
 
 namespace Chatbox\Config\Loader;
 
-class PHP implements LoaderInterface{
+class JSON implements LoaderInterface{
 
 	public function load($existAbsPath)
 	{

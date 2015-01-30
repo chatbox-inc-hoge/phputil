@@ -11,6 +11,13 @@ namespace Chatbox;
 
 class Filesystem extends \Symfony\Component\Filesystem\Filesystem{
 
+    /**
+     * @return Filesystem
+     */
+    public static function with(){
+        return new static();
+    }
+
 	public function getExt($path){
 		return $this->getPathParts($path,"extension");
 	}
