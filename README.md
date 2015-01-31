@@ -5,11 +5,59 @@ PHPでよく使うような処理とかクラスとかをざっくりとまと�
 
 ターゲットとしてはモックアップ制作時用のスピード改善Utilityをメインに
 
-- ドット記法の配列アクセサ
-- fuelphpのcleanRoom形式のテンプレートパーサ
-- レターテーブルの差し込みが可能なランダム文字列生成器
+## Chatbox\Arr
+
+配列操作。fuelphp Arrクラスベース
+
+## Chatbox\CDN
+
+各種CDN文字列の生成。モックアップ製作用
+
+## Chatbox\HTTP
+
+各種HTTP関連処理。ヘッダの出力、リダイレクト等
+
+### TODO
+
+- content type関連ヘルパー
+- json header
+- ダウンロードヘッダー
+
+## Chatbox\Input
+
+スーパーグローバルの操作
+
+### TODO
+
+- インプットフィルタ
+- hydrate関連の処理
+
+## Chatbox\PHPUtil
+
+カテゴリに入らないもの
+
+## Chatbox\Str
+
+文字列関連処理。ランダム文字列生成等
+
+### TODO
+
+- レターテーブルの差し込み
+
+### TODO
+
 - ロレム生成器
-- 各種CDN生成
+
+## Chatbox\View
+
+ビュー関連処理。
+
+### TODO
+
+- オブジェクト対応
+- ビューフィルタ
+
+
 
 ## 謝辞
 
