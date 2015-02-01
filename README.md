@@ -13,6 +13,22 @@ PHPでよく使うような処理とかクラスとかをざっくりとまと�
 
 各種CDN文字列の生成。モックアップ製作用
 
+## Chatbox\Container
+
+汎用コンテナの提供。別リポジトリの方がいいかもしれない
+
+### TODO
+
+- コンテナフィルタ
+
+## Chatbox\Conig\Config
+
+コンフィグコンテナ。ファイルから差し込む形。別リポジトリの方がいいかもしれない
+
+## Chatbox\FileSystem
+
+SymfonyのFilesystemにpathinfoを付け足しただけ。
+
 ## Chatbox\HTTP
 
 各種HTTP関連処理。ヘッダの出力、リダイレクト等

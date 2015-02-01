@@ -28,4 +28,10 @@ class Input {
         return Arr::get($_SERVER,$key,$default);
     }
 
+    static public function isMethod($method){
+        $method = strtolower($method);
+//        var_dump($method,static::server("REQUEST_METHOD"),$_SERVER);
+        return strtolower(static::server("REQUEST_METHOD")) === $method;
+    }
+
 } 
