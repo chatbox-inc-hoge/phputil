@@ -16,8 +16,12 @@ class PHPUtil {
 		return ($var instanceof \Closure) ? $var() : $var;
 	}
 
-    static function arr(){
-    }
+	public static function dataUriToBinary($uri){
+		$uri = substr($uri,strpos($uri,",")+1);
+		$uri = str_replace(" ","+",$uri);
+		return base64_decode($uri);
+
+	}
 
 
 } 
