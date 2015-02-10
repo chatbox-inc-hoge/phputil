@@ -86,7 +86,7 @@ class Config extends Container{
 			if(file_exists($path)){
 				return [$path];
 			}else{
-				throw new Exception("file not found");
+				throw new \Exception("file not found $path");
 			}
 		}else{
 			$loc = new FileLocator($this->baseDirs);
