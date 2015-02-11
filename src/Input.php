@@ -10,23 +10,43 @@ namespace Chatbox;
 
 
 
-class Input {
+class Input extends Container{
 
-    static public function get($key,$default=null){
-        return Arr::get($_GET,$key,$default);
-    }
-    static public function post($key,$default=null){
-        return Arr::get($_POST,$key,$default);
-    }
-    static public function session($key,$default=null){
-        return Arr::get($_SESSION,$key,$default);
-    }
-    static public function cookie($key,$default=null){
-        return Arr::get($_COOKIE,$key,$default);
-    }
-    static public function server($key,$default=null){
-        return Arr::get($_SERVER,$key,$default);
-    }
+	/**
+	 * @param array $source
+	 * @return static
+	 */
+	static public function load($source=[]){
+		is_array($source) || ($source = [$source]);
+
+		$ins = new static();
+		foreach($source as $type){
+			switch($type){
+				case "get":
+					$ins->httpGet();
+					break;
+				case "post":
+					$ins->httpPost();
+					break;
+				case "server":
+					$ins->httpServer();
+					break;
+				case "cookie":
+					$ins->cookie();
+					break;
+				case "session":
+					$ins->session();
+					break;
+				case "json":
+					$ins->jsonBody();
+					break;
+				case "env":
+					$ins->env();
+					break;
+			}
+		}
+		return $ins;
+	}
 
     static public function isMethod($method){
         $method = strtolower($method);
@@ -34,4 +54,66 @@ class Input {
         return strtolower(static::server("REQUEST_METHOD")) === $method;
     }
 
-} 
+	/**
+	 * @return $this
+	 */
+	public function httpGet(){
+		$this->merge($_GET);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function httpPost(){
+		$this->merge($_POST);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function session(){
+		$this->merge($_SESSION);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function cookie(){
+		$this->merge($_COOKIE);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function server(){
+		$this->merge($_SERVER);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function env(){
+		$this->merge($_ENV);return $this;
+	}
+
+	/**
+	 * @return $this
+	 */
+	public function jsonBody(){
+		$json = file_get_contents('php://input');
+		$json = urldecode($json);
+//		var_dump($json);
+		$json = trim($json);
+//		var_dump($json);
+		$json = json_decode($json,true);
+//		var_dump($json);
+//		exit;
+		if(is_array($json)){
+			$this->merge($json);return $this;
+		}else{
+//			var_dump($json);
+			throw new \Exception();
+		}
+	}
+
+}
