@@ -81,6 +81,4 @@ class Str {
 	static public function matchLeftHand($haystack,$needle){
 		return strpos($haystack,$needle) === 0;
 	}
-
-
 } 

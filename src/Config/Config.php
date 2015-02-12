@@ -90,8 +90,9 @@ class Config extends Container{
 			}
 		}else{
 			$loc = new FileLocator($this->baseDirs);
+            //locateは絶対パスを渡した時、第3引数がtrueの時、に非配列を返す。
 			$pathes = $loc->locate($path,$currentPath,$first);
-			return (array)$pathes; // FIXME ここちゃんと引数無効にして、引数で分岐してキャストする。
+			return ($first)?[$pathes]:$pathes;
 		}
 	}
 
