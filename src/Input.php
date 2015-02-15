@@ -12,6 +12,7 @@ namespace Chatbox;
 
 class Input extends Container{
 
+
 	/**
 	 * @param array $source
 	 * @return static

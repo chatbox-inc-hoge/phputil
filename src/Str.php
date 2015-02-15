@@ -13,7 +13,7 @@ class Str {
 
     static protected $loremCache = [];
 
-    static public function random($length=7,$table="default"){
+    static public function random($length=7,$table="alpha"){
         if(!is_array($table)){
             $table = static::getRandomTable($table);
             if(!is_array($table) || !count($table)){
@@ -22,7 +22,7 @@ class Str {
         }
         $pool = "";
         for($i=0;$i<$length;$i++){
-            $pool .= array_rand($table);
+            $pool .= $table[array_rand($table)];
         }
         return $pool;
     }
