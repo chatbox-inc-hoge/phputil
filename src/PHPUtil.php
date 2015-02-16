@@ -40,6 +40,14 @@ class PHPUtil {
         }
     }
 
+	/**
+	 * @param null $connection
+	 * @return \Illuminate\Database\Connection
+	 */
+	static public function getEloquent($connection=null){
+		return Capsule::connection($connection);
+	}
+
     static protected function parseEloquentConfig($dsn){
         if(is_array($dsn)){
             $config = $dsn + [

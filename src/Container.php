@@ -110,7 +110,7 @@ class Container implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSeria
 	 */
 	public function offsetGet($offset)
 	{
-		return $this->_get($offset);
+		return $this->get($offset);
 	}
 
 	/**
@@ -127,7 +127,7 @@ class Container implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSeria
 	 */
 	public function offsetSet($offset, $value)
 	{
-		return $this->_set($offset,$value);
+		return $this->set($offset,$value);
 	}
 
 	/**

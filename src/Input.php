@@ -15,7 +15,7 @@ class Input extends Container{
 
 	/**
 	 * @param array $source
-	 * @return static
+	 * @return Input
 	 */
 	static public function load($source=[]){
 		is_array($source) || ($source = [$source]);
