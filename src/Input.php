@@ -106,7 +106,7 @@ class Input extends Container{
 //		var_dump($json);
 		$json = trim($json);
 //		var_dump($json);
-		$json = json_decode($json,true);
+		$json = json_decode($json,true)?:[];
 //		var_dump($json);
 //		exit;
 		if(is_array($json)){
