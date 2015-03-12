@@ -14,6 +14,11 @@ namespace Chatbox;
 
 class Env {
 
+	const PRODUCTION = "production";
+	const STAGING = "staging";
+	const ALPHA = "ALPHA";
+	const DEVELOPMENT = "development";
+
 	static public function host($value,$operation){
 		return new static(function($expected){
 			return (gethostname() === $expected);

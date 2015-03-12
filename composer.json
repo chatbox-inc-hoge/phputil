@@ -8,7 +8,6 @@
     ],
     "require": {
         "php": ">=5.4",
-        "brandonwamboldt/utilphp": "1.0.*",
         "symfony/filesystem": "@stable",
         "symfony/config": "@stable",
         "symfony/yaml": "@stable"

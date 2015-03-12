@@ -45,7 +45,7 @@ class Container implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSeria
 		if($data instanceof Container){
 			$data = $data->toArray();
 		}
-		$this->data = array_merge($this->data,$data);
+		$this->data = Arr::merge($this->data,$data);
 		return $this;
 	}
 
