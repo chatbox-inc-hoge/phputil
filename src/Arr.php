@@ -12,8 +12,6 @@
 
 namespace Chatbox;
 
-use \utilphp\util;
-
 class Arr {
 
     /**
