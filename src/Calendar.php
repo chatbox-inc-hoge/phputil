@@ -80,9 +80,10 @@ class Calendar {
 
     /**
      * Carbonオブジェクトの一覧を取得
-     * @param null $length
+     * @param
+     * @return Carbon[]
      */
-    public function getCarbons($chunk=true,$length=null){
+    public function getCarbons($length=null){
         $startOn = $this->getStartOn();
         $endOn = $this->getEndOn();
 
@@ -90,9 +91,6 @@ class Calendar {
         while($startOn <= $endOn){
             $pool[] = $startOn->copy()->startOfDay();
             $startOn->addDay();
-        }
-        if($chunk){
-            $pool = array_chunk($pool,7);
         }
         return $pool;
     }
