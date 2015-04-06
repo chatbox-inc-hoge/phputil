@@ -110,6 +110,21 @@ class Arr {
     }
 
     /**
+     * shuffle array with same key-value relation
+     * @param array $list
+     * @return array
+     */
+    public function shuffle_assoc(array $list) {
+        $keys = array_keys($list);
+        shuffle($keys);
+        $random = array();
+        foreach ($keys as $key) {
+            $random[$key] = $list[$key];
+        }
+        return $random;
+    }
+
+    /**
      * Pluck an array of values from an array.
      *
      * @param  array   $array  collection of arrays to pluck from
