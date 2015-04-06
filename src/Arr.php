@@ -114,7 +114,7 @@ class Arr {
      * @param array $list
      * @return array
      */
-    public function shuffle_assoc(array $list) {
+    public static function shuffle_assoc(array $list) {
         $keys = array_keys($list);
         shuffle($keys);
         $random = array();
