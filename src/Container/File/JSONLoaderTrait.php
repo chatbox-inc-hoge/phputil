@@ -5,10 +5,11 @@
  * Date: 2015/04/04
  * Time: 10:17
  */
+namespace Chatbox\Container\File;
 
 use Chatbox\File;
 
-trait PHPLoaderTrait {
+trait JSONLoaderTrait {
 
     protected function loadJSON($path){
         $content = File::facade()->load($path);

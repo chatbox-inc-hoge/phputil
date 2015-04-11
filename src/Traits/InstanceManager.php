@@ -11,7 +11,7 @@ use Chatbox\Arr;
 
 trait InstanceManager {
 
-    static private $instances = [];
+    static protected $instances = [];
 
     /**
      * @param $obj
@@ -32,5 +32,9 @@ trait InstanceManager {
         }else{
             throw new \DomainException("");
         }
+    }
+
+    public function setGlobal($name="active"){
+        static::setInstance($this,$name);
     }
 }

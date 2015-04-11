@@ -11,7 +11,8 @@ namespace Chatbox\Config;
 
 use \Chatbox\Arr;
 use \Chatbox\Container;
-use \Chatbox\Filesystem;
+use Symfony\Component\Filesystem\Filesystem;
+use Chatbox\File;
 
 use \Symfony\Component\Config\FileLocator;
 
@@ -68,8 +69,7 @@ class Config extends Container{
 		return $this;
 	}
 	protected function loadFileFromExistAbsolutePath($existAbsPath){
-		$fs = new Filesystem();
-		$ext = $fs->getExt($existAbsPath);
+		$ext = File::facade()->getExt($existAbsPath);
 
 		if(($loader = Arr::get($this->loaders,strtoupper($ext),false))
 			&& ($loader instanceof Loader\LoaderInterface)){

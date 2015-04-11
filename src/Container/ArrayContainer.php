@@ -10,7 +10,7 @@ namespace Chatbox\Container;
 
 use Traversable;
 
-class ArrContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSerializable{
+class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\JsonSerializable{
 
     use ArrayContainerTrait;
 

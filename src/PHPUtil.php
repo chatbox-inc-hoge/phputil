@@ -25,6 +25,11 @@ class PHPUtil {
 		return base64_decode($uri);
 	}
 
+    /**
+     * @param $dsn
+     * @param bool $asGlobal
+     * @param bool $bootEloquent
+     */
     static public function bootEloquent($dsn,$asGlobal=true,$bootEloquent=true){
         $config = static::parseEloquentConfig($dsn);
         $capsule = new Capsule;
