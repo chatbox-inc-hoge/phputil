@@ -8,10 +8,16 @@ namespace Chatbox\Container;
  */
 use Chatbox\Arr;
 
+/**
+ * Public Fieldをコンテナ内容として処理するコンテナ。
+ * 利用元でpublicに定義がない内容はtoArrayによる配列化で
+ * コンテナの中身として扱われない。
+ * @package Chatbox\Container
+ */
 trait PropertyContainerTrait{
 
     public function setData(array $data){
-        foreach($this as $key=>$value){
+        foreach($this->toArray() as $key=>$value){
             if($value = Arr::get($data,$key)){
                 $this->{$key} = $value;
             }
