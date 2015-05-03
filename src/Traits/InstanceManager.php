@@ -34,6 +34,14 @@ trait InstanceManager {
         }
     }
 
+    static public function deleteInstance($name="active"){
+        if(isset(static::$instances[$name])){
+            unset( static::$instances[$name]);
+        }else{
+            throw new \DomainException("");
+        }
+    }
+
     public function setGlobal($name="active"){
         static::setInstance($this,$name);
     }
