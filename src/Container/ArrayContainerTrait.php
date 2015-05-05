@@ -12,12 +12,26 @@ trait ArrayContainerTrait{
 
     protected $_data = [];
 
+    protected $fillable;
+
     public function getItem($key,$default=null){
         return Arr::get($this->_data,$key,$default);
     }
 
     public function setItem($key,$default=null){
+        if(is_array($this->fillable) && !in_array($key,$this->fillable)){
+            throw new Exception("cant set value $key");
+        }
         Arr::set($this->_data,$key,$default);
+    }
+
+    public function setData(array $data){
+        foreach($data as $key=>$value){
+            if(is_array($this->fillable) && !in_array($key,$this->fillable)){
+                continue;
+            }
+            $this->setItem($key,$value);
+        }
     }
 
 	public function merge($data){

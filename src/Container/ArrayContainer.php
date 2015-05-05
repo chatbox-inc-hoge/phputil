@@ -14,7 +14,12 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 
     use ArrayContainerTrait;
 
-	/**
+    function __construct(array $data = [])
+    {
+        $this->setData($data);
+    }
+
+    /**
 	 * (PHP 5 &gt;= 5.4.0)<br/>
 	 * Specify data which should be serialized to JSON
 	 * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
@@ -102,7 +107,18 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 		unset($this->_data[$offset]);
 	}
 
-	/**
+    function __get($name)
+    {
+        return $this->getItem($name);
+    }
+
+    function __set($name, $value)
+    {
+        return $this->setItem($name,$value);
+    }
+
+
+    /**
 	 * (PHP 5 &gt;= 5.1.0)<br/>
 	 * Count elements of an object
 	 * @link http://php.net/manual/en/countable.count.php
