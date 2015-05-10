@@ -7,10 +7,17 @@ namespace Chatbox\Container;
  * Time: 17:28
  */
 use Chatbox\Arr;
+use Exception;
 
 trait ArrayContainerTrait{
 
+    /**
+     * use するスコープ内でprivate
+     * @var array
+     */
     protected $_data = [];
+
+    protected $readOnly = false;
 
     protected $fillable;
 
@@ -18,13 +25,55 @@ trait ArrayContainerTrait{
         return Arr::get($this->_data,$key,$default);
     }
 
-    public function setItem($key,$default=null){
-        if(is_array($this->fillable) && !in_array($key,$this->fillable)){
-            throw new Exception("cant set value $key");
+    public function setItem($key,$value){
+        if($this->readOnly){
+            throw new ArrayContainerException("cant overwrite readonly container");
         }
-        Arr::set($this->_data,$key,$default);
+        if(is_array($this->fillable) && !in_array($key,$this->fillable)){
+            throw new ArrayContainerException("cant set value $key");
+        }
+        Arr::set($this->_data,$key,$value);
     }
 
+    public function setItems(array $data){
+        if($this->readOnly) {
+            throw new ArrayContainerException("cant overwrite readonly container");
+        }
+
+        foreach($data as $key=>$value){
+            if(is_array($this->fillable) && !in_array($key,$this->fillable)){
+                continue;
+            }
+            $this->setItem($key,$value);
+        }
+    }
+
+    public function unsetItem($key){
+        unset($this->_data[$key]);
+    }
+
+    public function hasItem($key){
+        return isset($this->_data[$key]);
+    }
+
+    public function countItems(){
+        return count($this->_data);
+    }
+
+
+	/**
+     * @return array
+     */
+	public function toArray(){
+        return $this->_data;
+    }
+
+    ## region deprecated area
+    /**
+     * @param array $data
+     * @deprecated
+     * @throws Exception
+     */
     public function setData(array $data){
         foreach($data as $key=>$value){
             if(is_array($this->fillable) && !in_array($key,$this->fillable)){
@@ -34,18 +83,18 @@ trait ArrayContainerTrait{
         }
     }
 
-	public function merge($data){
+    /**
+     * @deprecated
+     */
+    public function merge($data){
         if(is_array($data)){
             $this->_data = Arr::merge($this->_data,$data);
         }else{
             throw new \DomainException("ArrayContainerTrait::merge only accept array as argument #0");
         }
     }
-	/**
-     * @return array
-     */
-	public function toArray(){
-        return $this->_data;
-    }
+    ## endregion
 
 }
+
+class ArrayContainerException extends Exception{}

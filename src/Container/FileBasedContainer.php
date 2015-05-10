@@ -26,7 +26,7 @@ class FileBasedContainer extends ArrayContainer{
         $callable = [$this, "load$ext"];
         if (is_callable($callable)) {
             $data = call_user_func($callable, $path);
-            $this->merge($data);
+            $this->setItems($data);
         } else {
             throw new \Exception("unsupported format: $ext");
         }

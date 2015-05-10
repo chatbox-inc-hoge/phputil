@@ -16,9 +16,10 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 
     function __construct(array $data = [])
     {
-        $this->setData($data);
+        $this->setItems($data);
     }
 
+    ## region implement interface
     /**
 	 * (PHP 5 &gt;= 5.4.0)<br/>
 	 * Specify data which should be serialized to JSON
@@ -59,7 +60,7 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 	 */
 	public function offsetExists($offset)
 	{
-		return (bool) isset($this->_data[$offset]);
+		return $this->hasItem($offset);;
 	}
 
 	/**
@@ -104,7 +105,7 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 	 */
 	public function offsetUnset($offset)
 	{
-		unset($this->_data[$offset]);
+        $this->unsetItem($offset);
 	}
 
     function __get($name)
@@ -114,7 +115,7 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 
     function __set($name, $value)
     {
-        return $this->setItem($name,$value);
+        $this->setItem($name,$value);
     }
 
 
@@ -129,8 +130,10 @@ class ArrayContainer implements \ArrayAccess,\Countable,\IteratorAggregate,\Json
 	 */
 	public function count()
 	{
-		return count($this->_data);
+        return $this->countItems();
 	}
+
+    ## endregion
 
 
 } 

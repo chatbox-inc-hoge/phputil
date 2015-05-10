@@ -25,7 +25,7 @@ class YFM {
 //            $this->path = $path;
             $this->load($path);
         }else{
-            throw new \Exception("cant read file");
+            throw new \Exception("cant read file $path");
         }
     }
 
